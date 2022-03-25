@@ -11,6 +11,8 @@
   "dependencies": {
     "@thirdweb-dev/react": "^2.0.1",
     "@thirdweb-dev/sdk": "^2.0.15",
+    "babel-plugin-styled-components": "^2.0.6",
+    "babel-preset-next": "^1.4.0",
     "dotenv": "^16.0.0",
     "ethers": "^5.6.1",
     "next": "12.1.0",
