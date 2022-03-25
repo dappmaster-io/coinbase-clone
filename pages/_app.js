@@ -3,7 +3,7 @@ import { ThirdwebProvider, ChainId } from "@thirdweb-dev/react";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThirdwebProvider supportedChainIds={ChainId.Rinkeby}>
+    <ThirdwebProvider supportedChainIds={[ChainId.Rinkeby]}>
       <Component {...pageProps} />
     </ThirdwebProvider>
   );

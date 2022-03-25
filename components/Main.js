@@ -2,10 +2,14 @@ import styled from "styled-components";
 import Portfolio from "./Portfolio";
 import Promos from "./Promos";
 
-function Main() {
+function Main({ thirdWebTokens, sanityTokens, walletAddress }) {
   return (
     <Wrapper>
-      <Portfolio />
+      <Portfolio
+        walletAddress={walletAddress}
+        sanityTokens={sanityTokens}
+        thirdWebTokens={thirdWebTokens}
+      />
       <Promos />
     </Wrapper>
   );
