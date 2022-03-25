@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import Header from "../components/Header";
+import Main from "../components/Main";
 function Dashboard({ address }) {
   return (
     <Wrapper>
       <MainContainer>
         <Header />
+        <Main />
       </MainContainer>
     </Wrapper>
   );
