@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Transfer from "./Transfer";
 import CoinSelector from "./CoinSelector";
+import Receive from "./Receive";
 
 function TransferModal({ sanityTokens, thirdWebTokens, walletAddress }) {
   const [action, setAction] = useState("send");

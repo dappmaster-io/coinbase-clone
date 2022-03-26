@@ -39,7 +39,9 @@ function Transfer({ selectedToken, setAction, thirdWebTokens, walletAddress }) {
 
   const sendCrypto = async (amount, recipient) => {
     console.log("sending crypto", activeThirdWebToken, amount, recipient);
+
     if (activeThirdWebToken && amount && recipient) {
+      setAction("transferring");
       const tx = await activeThirdWebToken.transfer(recipient, amount);
       console.log(tx);
       setAction("transferred");
